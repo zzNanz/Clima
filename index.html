@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <input type="text" id="input-city" placeholder="Digite o nome da cidade">
+            <button id="btn-search">Pesquisar</button>
+        </header>
+
+        <main>
+            <section class="main-display">
+                <h2 id="city-name">Cidade</h2>
+                <span id="main-temp">0°C</span>
+                <img src="" id="weather-icon" alt="Icone de clima">
+            </section>
+
+            <section id="details-grid">
+                <article class="detail-card">
+                    <span id="icon-small"><img src="./img/thermometer-sun.svg" alt="Icone de temperatura"></span>
+                    <h4>Temperatura</h4>
+                    <p id="val-temperature">0°C</p>
+                </article>
+                <article class="detail-card">
+                    <span id="icon-small"><img src="./img/droplet.svg" alt="Icone de humidade"></span>
+                    <h4>Humidade</h4>
+                    <p id="val-humidity">0%</p>
+                </article>
+                <article class="detail-card">
+                    <span id="icon-small"><img src="./img/gauge.svg" alt="Icone de pressão"></span>
+                    <h4>Pressão</h4>
+                    <p id="val-pressure">0 hPa</p>
+                </article>
+                <article class="detail-card">
+                    <span id="icon-small"><img src="./img/wind.svg" alt="Icone de vento"></span>
+                    <h4>Velocidade do vento</h4>
+                    <p id="val-wind-speed">0 km/h</p>
+                </article>
+            </section>
+        </main> 
+    </div>
+
+    <script src="./js/js.js"></script>
+</body>
+</html>
